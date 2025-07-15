@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neo AI Chat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #170c61; /* Same background color as your Python app */
+            color: #F0F0F0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .chat-container {
+            width: 90%;
+            max-width: 600px;
+            background-color: #1b1061; /* Similar to your chat frame */
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 80vh;
+        }
+        #chat-history {
+            flex-grow: 1;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        .message {
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+        .neo-message {
+            color: #FFFFFF;
+        }
+        .user-message {
+            color: #FFFFFF;
+            text-align: right;
+        }
+        .message-sender {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        #input-form {
+            display: flex;
+            padding: 10px;
+            background-color: #23128c;
+            border-top: 1px solid #3a1f9a;
+        }
+        #user-input {
+            flex-grow: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #3a1f9a;
+            color: #F0F0F0;
+        }
+        #send-button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #1a0f78;
+            color: #FFFFFF;
+            font-weight: bold;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div id="chat-history">
+            <div class="message neo-message">
+                <span class="message-sender">Neo</span>Hello! How can I help you today?
+            </div>
+        </div>
+        <form id="input-form">
+            <input type="text" id="user-input" placeholder="Type your message..." autofocus>
+            <button type="submit" id="send-button">Send</button>
+        </form>
+    </div>
+    <script>
+        // We'll add the JavaScript code here next!
+    </script>
+</body>
+</html>
